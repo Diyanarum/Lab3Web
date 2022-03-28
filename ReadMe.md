@@ -262,4 +262,114 @@ Agar tampilan form menarik seperti gambar diatas, kalian dapat menambahkan kode 
 
 1. Buatlah form yang menampilkan dropdown menu dan listbox dengan multiple selection.
 
-# <P align="center"> THANK'S FOR YOUR ATTENTION GUYS! SEE YOU!
+![menambahkan_gambar](img/TASK.png)
+
+Untuk dapat membuat tampilan seperti gambar diatas, disini saya menggunaka kode-kode seperti dibawah ini:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Lanjutan</title>
+</head>
+<body>
+    <header>
+        <h1 style="color:rgb(109, 15, 59); text-align:center"> CONCERT TICKET REGISTRATION</h1>
+    </header>
+</body>
+</html>
+
+<form action="proses.php" method="post">
+    <fieldset>
+        <legend> <h4 style="text-align: center">Data Audience</h4></legend>
+    
+    
+    <p>
+    <label for="Name">Name</label>
+    <input type="text" id="Name" name="Name">
+    </p>
+
+
+    <p>
+    <label for="adress">Adress</label>
+    <textarea id="adress" name="adress" cols="50" rows="1"></textarea>
+    </p>
+
+
+    <p>
+    <label for="identity number">Identity Number</label>
+    <textarea id="identity number" name="identity number" cols="20" rows="1"></textarea>
+    </p>
+
+
+    <p>
+        <label>Ages</label>
+        <input id="ag_u17" type="radio" name="under 17" value="ag_u17" /><label
+        for="ag_u17">Under (-17)</label>
+        <input id="ag_ov" type="radio" name="over 17" value="ag_ov" /><label
+    
+        for="ag_ov">Over (+17)</label>
+    </p>
+    
+
+
+<p>
+    <!-- Dropdown Menu -->
+    <h3>Seat (Dropdown)</h3>
+    <label>Choose your Seat</label>
+   <select name="Choose your Seat" id="Choose your Seat">
+       <option value="Seat">---------Choose Here---------</option>
+       <option value="VVIP (Standing 4.500.000)">VVIP (Standing 4.500.000)</option>
+       <option value="Red (Standing 3.000.000)">Red (Standing 3.000.000)</option>
+       <option value="Purple (Standing 2.000.000)">Purple (Standing 2.000.000)</option>
+       <option value="Pink (Standing 1.500.000)">Pink (Standing 1.500.000)</option>
+       <option value="Yellow (Standing 1.000.000)">Yellow (Standing 1.000.000)</option>
+   </select> 
+</p>
+
+
+<p>
+    <label for="Ticket">Ticket</label>
+    <textarea id="Ticket" name="Ticket" cols="20" rows="1"></textarea>
+    </p>
+
+
+<p>
+    <!-- Dropdown Menu -->
+    <h3>Payment (Multiple Selection) </h3>
+    <label>Choose your Payment</label>
+   <select name="Choose your Payment" id="Choose your Payment">
+       <option value="Payment">---------Choose Here---------</option>
+       <option value="Bank Transfer">Bank Transfer</option>
+       <option value="Credit Card">Credit Card</option>
+   </select> 
+</p>
+
+
+
+
+<style>
+    form p > label {
+    display: inline-block;
+    width: 100px;
+    }
+    form input[type="text"], form textarea {
+    border: 1px solid #99053e;
+    }
+    form input[type="submit"] {
+    border: 1px solid #940b22;
+    background-color: #75163a;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 5px 15px;
+    }
+</style>
+
+<p><input type="submit" value="Checkout"></p>
+</fieldset>
+</form>
+```
+
+# <P align="center"> THANK'S FOR YOUR ATTENTION!! SEE YOU!!
